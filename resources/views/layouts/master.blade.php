@@ -16,51 +16,262 @@
     <link rel="canonical" href="@yield('canonical')"  />
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+<div class="header-top">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="resources/images/carve.png" /> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<header class="masthead">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-                <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-                <p class="lead">A great starter layout for a landing page</p>
+        <div class="row">
+            <div class="col phone">
+                <li><a >CALL OR WHATSAPP 0314 200 6655</a></li>
+
+            </div>
+            <div class="col">
+                <div class="pull-right rightLinks">
+                    <li class="px-20"><a ><i class="fa fa-question-circle"></i>  HELP</a></li>
+                    <li class="px-20"><a ><i class="fa fa-phone"></i> CONTACT</a></li>
+                </div>
             </div>
         </div>
     </div>
-</header>
+</div>
+<div class="container bg-white">
+    <div class="row">
+
+        <div class="col col-lg-2">
+           {{-- <form>
+                <div class="form-group position-relative search-form">
+                    <input  type="search" placeholder="Search Something New." name="search" class="form-control search-query"/> <i class="search-button  fa fa-search"></i>
+                </div>
+            </form>--}}
+        </div>
+        <div class="col col-lg-8 m-auto text-center">
+            <a class="navbar-brand" href="#"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="col col-lg-2">
+            <div class="btn-group pull-right">
+                <a  class="dropdown-toggle dropdown-toggle-split ShoppingCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Cart <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-container clearfix">
+    <button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
+    <nav class="manu clearfix" >
+        <ul class="m-auto d-block">
+            <li><a href="{{URL('')}}"><i class="fa fa-home"></i></a></li>
+            <li ><a href="#">Our Collection
+
+                </a>
+                <ul>
+                    <li><a href="#">School</a>
+                        <ul>
+                            <li><a href="#">Lidership</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Masters</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Online</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Research</a>
+                        <ul>
+                            <li><a href="#">Undergraduate research</a></li>
+                            <li><a href="#">Masters research</a></li>
+                            <li><a href="#">Funding</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Something</a>
+                        <ul>
+                            <li><a href="#">Sub something</a></li>
+                            <li><a href="#">Sub something</a></li>
+                            <li><a href="#">Sub something</a></li>
+                            <li><a href="#">Sub something</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Graphic T-Shirt</a>
+                <ul>
+                    <li><a href="#">School</a>
+                        <ul>
+                            <li><a href="#">Lidership</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Masters</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Online</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Masters</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Online</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Empty sub</a></li>
+                </ul>
+            </li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Our Story</a></li>
+        </ul>
+    </nav>
+</div>
+@yield('banner')
+
+
+
+
+
+
+{{----}}
 <section class="py-20">
     @yield('content')
 </section>
-<script src="https://code.jquery.com/jquery-3.4.0.min.js"  ></script>
-<script src="{{ asset('js/bootstrap.min.js') }}" ></script>
+
+
+<div class="footer full-width site-footer">
+    <div class="pattern">
+            <div class="site-footer-inner container">
+                <div class="row footer-contact">
+                    <div class="footer-contact-phone col-sm-3 col-xs-12 footer-content-block">
+                        <span class="iconhidden-xs" aria-hidden="true"></span>
+                        <div class="icon-push">
+                            <a href="tel:0314 200 6655" id="footerPhoneNumberLink">
+                                <div class="headed"><icon class="fa fa-phone-square"></icon> <span class="sr-only">Call us at</span>0314 200 6655</div> </a>
+                            <p> Mon–Sat, 9am – 7pm</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-email col-sm-3 col-xs-12 footer-content-block">
+                        <span class="icon " aria-hidden="true"></span>
+                        <div class="icon-push">
+                            <a href="/contact" target="_blank" rel="noopener">
+                                <div class="headed"><icon class="fa fa-envelope"></icon> Email Us</div> </a>
+                            <p> We will respond as quickly as we can. </p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-chat no-gutter col-sm-3 col-xs-12 footer-content-block"> <span class="icon icon-rei-chat" aria-hidden="true"></span> <div class="icon-push">
+                            <a href="/contact" target="_blank" rel="noopener">
+                                <div class="headed"><icon class="fa fa-comment"></icon> Live Chat</div> </a>
+                            <p> Mon–Sat, 9am – 7pm </p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-help col-sm-3 col-xs-12 footer-content-block">
+                        <div class="icon-push">
+                            <a href="/help"> <div class="headed"> <icon class="fa fa-question-circle"></icon> Help Center</div> </a>
+                            <p> Find answers online anytime. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3  m-auto text-center">
+                            <a href="/about_us">About Us</a>
+                        </div>
+                        <div class="col-lg-3  m-auto text-center">
+                            <a href="https://www.bargain.pk/your-orders">Your Orders </a>
+                        </div>
+                        <div class="col-lg-3  m-auto text-center">
+                            <a href="https://www.bargain.pk/">Payment Methods</a>
+                        </div>
+                        <div class="col-lg-3 m-auto text-center">
+                            <a href="https://www.bargain.pk/return-refund">Return &amp; Refund</a>
+                        </div>
+                        <div class="col-lg-3  m-auto text-center">
+                            <<a href="https://www.bargain.pk/delivery">Shipping &amp; Deliveries</a>
+                        </div>
+                        <div class="col-lg-3  m-auto text-center">
+                            <a href="https://www.bargain.pk/secure-payment"> Secure Shopping</a>
+                        </div>
+                        <div class="col-lg-3  m-auto text-center">
+                            <a href="https://www.bargain.pk/contact">Contact Us</a>
+                        </div>
+                        <div class="col-lg-3  m-auto text-center">
+                            <a href="https://www.bargain.pk/privacy">Privacy &amp; Policy</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row footer-difference-banner ">
+                    <div class=" m-auto text-center">
+                        <h4 class="text-center">The CARVE Difference:<br>100 % satisfaction guaranteed. The Right Product &amp; Best Advice. <br>Huge Savings Everyday</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class=" footer-apps-social-legal">
+                        <div class=" center CenterAlign">
+                            <div class="footer-social ">
+                                <div class="m-auto text-center">
+                                    <a class="text-center" href="https://twitter.com/BargainPk" target="_blank">
+                                        <icon class="fa fa-twitter"></icon>
+                                        <span class="sr-only">twitter</span> </a>
+                                    <a class="text-center" href="https://facebook.com/BargainPk" target="_blank">
+                                        <icon class="fa fa-facebook"></icon>
+                                        <span class="sr-only">facebook</span> </a>
+                                    <a  class="text-center" href="https://www.pinterest.com/bargainpakistan" target="_blank">
+                                        <icon class="fa fa-pinterest"></icon>
+                                        <span class="sr-only">pinterest</span> </a>
+                                    <a  class="text-center" href="https://www.youtube.com/channel/UCKX_Ut65akaqWWP11oVLeiQ?view_as=subscriber">
+                                        <icon class="fa fa-youtube"></icon>
+                                        <span class="sr-only">youtube</span> </a>
+                                    <a class="text-center hidden" href="https://www.instagram.com/rei/" target="_blank">
+                                        <icon class="fa fa-instagram"></icon>
+                                        <span class="sr-only">instagram</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-legal">
+                    <div class="text-center m-auto" >
+                        <p class="copyright" data-ui="footer-rei-copyright"> © {{date('Y')}} Bargain Pakistan. All rights reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+  </div>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="{{ asset('js/vendor/owl.carousel/owl.carousel.min.js') }}" ></script>
+<script src="{{ asset('js/menu.js') }}" ></script>
+
 
 <script>
     $(document).ready(function(){
+        $('ul.nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+        }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+        });
+        $('.masthead').alert()
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,

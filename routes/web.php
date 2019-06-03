@@ -15,10 +15,7 @@ use App\Http\Model\Catalog\Product;
 use App\Http\Controllers\Catalog\CategoryController;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-Route::get('/', function () {
-    return view('common.home');
-});
-
+Route::get('/','Common\HomeController@index');
 Route::get('cart','Checkout\CartController@index');
 Route::post('cart/add','Checkout\CartController@add');
 Route::post('cart/remove','Checkout\CartController@remove');

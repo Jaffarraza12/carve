@@ -48,7 +48,7 @@ class Cart extends Model
                     'quantity' => $v->quantity,
                     'item_price' => $price,
                     'item_total' => $price * $v->quantity,
-                    'image' => $product->image,
+                    'image' => empty($product->image) ? asset('images.png') : asset('catalog/'.$product->image),
                     'description' => $product->short_description,
                     'variation' => $v->variation,
                 );

@@ -16,7 +16,14 @@ class ProductController extends Controller
     public function get($product){
         $data = array();
         $canonical = url()->current();
-        $productImages = ProductImage::where('product_id',$product->product_id)->get();
+        $pImages = ProductImage::where('product_id',$product->product_id)->get();
+        $productImages = array();
+        $productImages[0] = empty($product->image) ? asset('images.png') : asset('catalog/'.$product->image);
+        $i =1;
+        foreach ($pImages as $image){
+            $productImages[$i] = empty($image->image) ? asset('images.png') : asset('catalog/'.$image->image);
+            ++$i;
+        }
         $variations = Variation::join('variation_value', 'variation_value.variation_id', '=', 'variation_value.variation_id')->get();
         $productVariations = ProductVariation::join('variation','variation.variation_id','=','product_variation.variation_id')
             ->where('product_id',$product->product_id)

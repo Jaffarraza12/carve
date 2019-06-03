@@ -21,16 +21,9 @@ class URLlocator
      */
     public function handle($request, Closure $next)
     {
-        $URL = basename(url()->current());
-        $category = Category::where('seo_url',$URL)->where('status',1);
-        if($category->count()){
-            $category  = $category->first();
-            $classArgs = [
-                'category'    => $category,
-            ];
-            return App::make(CategoryController::class,$classArgs)->view();
-         }
+        $URLJ = 'Jaffar';
 
-            return $next($request);
+        return $next($request);
+
     }
 }

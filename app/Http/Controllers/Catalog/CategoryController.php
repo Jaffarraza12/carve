@@ -17,18 +17,20 @@ class CategoryController extends Controller
        $data = array();
        $canonical = url()->current();
        $products = array();
-       $CategoryProduct = CategoryProduct::where('category_id',$category->category_id)->distinct('product_id')->get();
-       foreach ($CategoryProduct as $rec){
-           $product = Product::where('product_id',$rec->product_id)->first();
-           $productSpecial = ProductSpecial::where('product_id',$rec->product_id)->first();
-
-           $products[] = array(
-                'name' => $product->name,
-                'seo_url' => $product->seo_url,
-                'price' => $product->price,
-                'image' => $product->image,
-                'special' => $productSpecial,
-            );
+       $CategoryProduct = Product::join('product_to_category','product_to_category.product_id','=','product.product_id')
+           ->where('product_to_category.category_id',$category->category_id)->where('product.status',1)->distinct('product.product_id')->get();
+       foreach ($CategoryProduct as $product) {
+           $productSpecial = ProductSpecial::where('product_id', $product->product_id)->first();
+           if (!empty($product->price))
+           {
+               $products[] = array(
+                   'name' => empty($product->name) ? '' : $product->name,
+                   'seo_url' => empty($product->seo_url) ? '#' : $product->seo_url,
+                   'price' => $product->price,
+                   'image' =>  empty($product->image) ? asset('images.png') : asset('catalog/'.$product->image),
+                   'special' => $productSpecial,
+               );
+            }
        }
 
 

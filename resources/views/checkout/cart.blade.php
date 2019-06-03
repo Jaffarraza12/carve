@@ -1,4 +1,4 @@
-@extends('layouts.transaction')
+@extends('layouts.master')
 @section('title', 'CARVE CART')
 @section('content')
     <style>
@@ -253,7 +253,7 @@
         @foreach($cart as $key => $product)
         <div class="product">
             <div class="product-image">
-                <a href="{{$product['url']}}"><img src="{{asset($product['image'])}}"></a>
+                <a href="{{$product['url']}}"><img src="{{$product['image']}}"></a>
             </div>
             <div class="product-details">
                 <div class="product-title"><a href="{{$product['url']}}">{{$product['name']}}</a></div>
