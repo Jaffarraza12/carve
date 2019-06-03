@@ -12,6 +12,6 @@ class HomeController extends Controller
     function index(){
         $homeCategories = Category::where('status',1)->OrderBy('sort_order','desc')->get();
 
-        return view('Common.home',compact('homeCategories'));
+        return view('common.home',compact('homeCategories'));
     }
 }
