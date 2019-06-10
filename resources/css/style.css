@@ -127,6 +127,12 @@ span.old_price {text-decoration: line-through;color: #4c4c4c;font-size: 26px;mar
  .ins-container {width: 50%;padding-top:50%;float: left;}
  .ins-container:nth-of-type(7n + 1){width: 50%;padding-top:50%;float: left;}
  .mblFullWidth{width: 100% !important;}
+ .categoryImage img{
+     width:90%;text-align: center;
+ }
+ .span.drop_down_icon{margin-top: 16px;right: 24px;font-weight: bolder;}
+
+
 }
 ul,li{
     list-style: none;
@@ -145,11 +151,12 @@ ul,li{
 }
 .menu-container .manu ul li{
     float: left;
-    background-color: transparent;
+    position: relative;
 }
 .menu-container .manu ul {
     padding: 0px;
     text-align: left;
+    background: #c6a360;
 }
 .menu-container .manu ul li a{
     display: block;
@@ -166,21 +173,19 @@ ul,li{
     line-height: 0px;
 }
 .menu-container .manu ul li a:hover{
-    color:#c6a360;
+    color:#1d1a1a;
 }
 .menu-container .manu ul li a:hover span{
     transform: rotate(180deg);
     padding-right: 5px;
 }
-.menu-container .manu ul li a:hover{
-    border-bottom: 1px solid #fff;
-}
 span.drop_down_icon{
-    color:#fff;
+    color:#1d1a1a;
     padding-left: 5px;
     font-size: 18px;
     position: absolute;
-    margin-top: 11px;
+    margin-top: 17px;
+    right:-3px;
 }
 .menu-container .manu ul li .have_dropdown{
     background-color:transparent;
@@ -251,19 +256,25 @@ span.drop_down_icon{
     float: none;
     display: block;
     width: 100%;
+
 }
 .nav_menu_toggler_icon{
     cursor: pointer;
     position: absolute;
-    right: 5%;
-    top: 2.3%;
+    left: 0;
+    top: 7.3%;
     background: none;
-    color: #fff;
+    color: #1d1a1a;
     font-size: 25px;
     z-index: 150;
     display: none;
     border: none;
 }
+
+.cart-link {color:#1d1a1a; }
+.cart-link i{font-size: 32px;}
+.cart-link div{background:#1d1a1a;border-radius: 100%;width: 20px;height: 20px;left:25px;bottom:39px;position: absolute }
+.cart-link span{text-align: center;display: block;color: #fff;font-size: 12px;font-weight: bold }
 .nav_menu_toggler_icon span{
     padding: 2px 7px;
     border-radius: 8px;
@@ -285,7 +296,7 @@ span.drop_down_icon{
         display:block;
     }
     .menu-container{
-        background: skyblue;
+        background: #c6a360;
     }
     .menu-container .manu{
         display: none;

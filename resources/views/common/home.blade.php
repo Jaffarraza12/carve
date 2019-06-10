@@ -31,7 +31,7 @@
         <div class="home-container m-auto">
         <div class="row">
             @foreach($homeCategories as $category)
-            <div class="col col-lg-6 homeGrid">
+            <div class="col-lg-6 homeGrid">
                 <div class="categoryImage m-auto text-center">
                     <a href="{{URL($category->seo_url)}}"> <img class=" " src="{{ asset('catalog'.$category->image)}}"  width="500" height="auto"/></a>
                 </div>

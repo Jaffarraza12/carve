@@ -50,16 +50,16 @@
         </div>
         <div class="col col-lg-2">
             <div class="btn-group pull-right">
-                <a href="{{URL('/cart')}}"  class="ShoppingCart position-relative cart-link">
-                          <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" s><span >1</span></div>
-                </a>{{--<div class="dropdown-menu">
+                <a  class=" ShoppingCart position-relative"  aria-haspopup="true" aria-expanded="false">
+                         Cart <div class="position-relative" style="background:#1d1a1a;border-radius: 100%;width: 25px;height: 25px; "></div>
+                </a>
+                {{--<div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Separated link</a>
                 </div>--}}
-
             </div>
         </div>
     </div>
@@ -69,7 +69,9 @@
     <nav class="manu clearfix" >
         <ul class="m-auto d-block">
             <li><a href="{{URL('/')}}"><i class="fa fa-home"></i></a></li>
-            <li ><a href="#">Our Collection</a>
+            <li ><a href="#">Our Collection
+
+                </a>
                 <ul>
                     <li><a href="#">School</a>
                         <ul>
