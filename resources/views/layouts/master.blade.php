@@ -20,13 +20,14 @@
     <div class="container">
         <div class="row">
             <div class="col phone">
-                <li><a >CALL OR WHATSAPP 0314 200 6655</a></li>
+                <li class="hidden-mbl"><a href="tel:03142006655" class="text-white" >CALL OR WHATSAPP 0314 200 6655</a></li>
+                <li class="hidden-desk"><a href="tel:03142006655" class="text-white"><i class="fa fa-phone"></i> CALL</a></li>
 
             </div>
             <div class="col">
                 <div class="pull-right rightLinks">
                     <li class="px-20"><a ><i class="fa fa-question-circle"></i>  HELP</a></li>
-                    <li class="px-20"><a ><i class="fa fa-phone"></i> CONTACT</a></li>
+                    <li class="px-20"><a ><i class="fa fa-phone"></i> CONTACT US</a></li>
                 </div>
             </div>
         </div>

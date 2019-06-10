@@ -10,6 +10,7 @@
         <div class="card">
             <div class="container-fliud">
                 <div class="alert alert-success" style="display: none;"> <icon class="fa fa-check"></icon> Your Item has been added to your  <a href="{{URL('cart')}}">cart</a>  </div>
+                <div class="alert alert-danger" style="display: none;"> </div>
                 <h1 class="product-title">{{$product->name}}</h1>
 
                 <div class="wrapper row">
@@ -105,7 +106,12 @@
                     $('.cart-resp').html();
 
                     if (json['error']) {
-                        //$('#abdq').after('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+                        $('.alert-danger').show();
+                        $('html, body').animate({
+                            scrollTop: $(".alert-danger").offset().top - 200
+                        }, 1000);
+                        $('.alert-danger').html(json['error']);
+
                     }
 
                     if (json['success']) {

@@ -5,6 +5,8 @@ body{
 
 }
 a{color:#c6a360;}
+.hidden-desk{display: none;}
+.hidden-mbl{display: block;}
 
 .container{max-width: 100% !important}
 .navbar-brand{padding: 15px 0px !important;}
@@ -22,15 +24,7 @@ a,p,span,div{font-size: 16px;}
 
 }
 .masthead-category h1{    padding: 5% 7% 0px;width: 100%;}
-.masthead {
-    height: 100vh;
-    max-height:800px;
-    background-image: url('./../images/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
+.masthead {height: 100vh;max-height:800px;background-image: url('./../images/banner.jpg');background-size: cover;background-position: center;    background-repeat: no-repeat;}
 .bread{padding-left: 7%;}
 .bread li{display: inline-block; padding:0px 25px;}
 .bread li a{font-size: 25px;color: #262626}
@@ -131,7 +125,10 @@ span.old_price {text-decoration: line-through;color: #4c4c4c;font-size: 26px;mar
      width:90%;text-align: center;
  }
  .span.drop_down_icon{margin-top: 16px;right: 24px;font-weight: bolder;}
+    .hidden-mbl{display: none;}
+    .hidden-desk{display: block;}
 
+    .header-top .rightLinks li { margin-left: 2px;padding-left: 10px;}
 
 }
 ul,li{
