@@ -18,10 +18,9 @@
 <body>
 <div class="header-top">
     <div class="container">
-        <div class="row">
+        <div class="row hidden-mbl">
             <div class="col phone">
                 <li class="hidden-mbl"><a href="tel:03142006655" class="text-white" >CALL OR WHATSAPP 0314 200 6655</a></li>
-                <li class="hidden-desk"><a href="tel:03142006655" class="text-white"><i class="fa fa-phone"></i> CALL</a></li>
 
             </div>
             <div class="col">
@@ -30,6 +29,11 @@
                     <li class="px-20"><a ><i class="fa fa-phone"></i> CONTACT US</a></li>
                 </div>
             </div>
+        </div>
+        <div class="row  hidden-desk">
+            <div class="mbl-row"><a href="tel:03142006655" class="text-white"><i class="fa fa-phone"></i> CALL</a></div>
+            <div class="mbl-row"><a ><i class="fa fa-question-circle"></i>  HELP</a></div>
+            <div class="mbl-row"><i class="fa fa-phone"></i> CONTACT US </div>
         </div>
     </div>
 </div>

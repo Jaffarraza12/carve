@@ -49,6 +49,7 @@ a,p,span,div{font-size: 16px;}
 .categoryGrid .product .product-name a.price{color: #c6a360;font-weight: bold;font-size: 26px;}
 .checked,.price span {color: #c6a360;font-size: 26px;}
 .shipping{    margin-top: 20px;padding: 5px 25px;font-size: 25px;}
+.header-top .mbl-row{width: 33%;float: left;padding-top: 10px;padding-left: 14px;}
 .add-to-cart, .like {
     background: #c6a360;
     padding: 1.2em 1.5em;
@@ -260,7 +261,7 @@ span.drop_down_icon{
     cursor: pointer;
     position: absolute;
     left: 0;
-    top: 7.3%;
+    top: 8.3%;
     background: none;
     color: #1d1a1a;
     font-size: 25px;
