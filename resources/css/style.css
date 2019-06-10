@@ -48,6 +48,7 @@ a,p,span,div{font-size: 16px;}
 .categoryGrid .product .product-name a.title{color: #000;font-size: 22px;font-weight: 400;clear: both;display: block;padding:0% 10%;}
 .categoryGrid .product .product-name a.price{color: #c6a360;font-weight: bold;font-size: 26px;}
 .checked,.price span {color: #c6a360;font-size: 26px;}
+.shipping{    margin-top: 20px;padding: 5px 25px;font-size: 25px;}
 .add-to-cart, .like {
     background: #c6a360;
     padding: 1.2em 1.5em;
@@ -124,7 +125,7 @@ span.old_price {text-decoration: line-through;color: #4c4c4c;font-size: 26px;mar
  .categoryImage img{
      width:90%;text-align: center;
  }
- .span.drop_down_icon{margin-top: 16px;right: 24px;font-weight: bolder;}
+ span.drop_down_icon{margin-top: 16px;right: 24px !important;font-weight: bolder;}
     .hidden-mbl{display: none;}
     .hidden-desk{display: block;}
 

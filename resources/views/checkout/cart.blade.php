@@ -270,9 +270,7 @@
         @endforeach
 
         <div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                Add Shipping
-            </button>
+
             <!-- The Modal -->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
@@ -333,9 +331,16 @@
             </div>
         </div>
 
+        <div>
 
+            <button type="button" class="btn-lg shipping btn-primary pull-left" data-toggle="modal" data-target="#myModal">
+                Add Shipping
+            </button>
 
-        <a href="{{URL('checkout')}}" class="checkout">Checkout</a>
+            <a href="{{URL('checkout')}}" class="checkout pull-right">Checkout</a>
+
+        </div>
+        <div style="height: 240px;"></div>
         @else
             <div class="alert alert-danger" role="alert">
                 <strong>YOUR CART IS EMPTY  </strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
