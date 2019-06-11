@@ -46,6 +46,8 @@
                     <input  type="search" placeholder="Search Something New." name="search" class="form-control search-query"/> <i class="search-button  fa fa-search"></i>
                 </div>
             </form>--}}
+            <button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
+
         </div>
         <div class="col col-lg-8 m-auto text-center">
             <a class="navbar-brand" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
@@ -70,8 +72,7 @@
     </div>
 </div>
 <div class="menu-container clearfix">
-    <button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
-    <nav class="manu clearfix" >
+   <nav class="manu clearfix" >
         <ul class="m-auto d-block">
             <li><a href="{{URL('/')}}"><i class="fa fa-home"></i></a></li>
             <li ><a href="#">Our Collection</a>
