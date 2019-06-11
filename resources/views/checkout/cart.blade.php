@@ -182,7 +182,7 @@
             }
 
             .product-quantity {
-                width: 100px;
+                width: 140px;
             }
             .product-quantity input {
                 margin-left: 20px;
@@ -190,6 +190,7 @@
 
             .product-quantity:before {
                 content: 'x';
+                margin-right: 20px;
             }
 
             .product-removal {

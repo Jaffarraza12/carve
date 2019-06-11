@@ -210,8 +210,9 @@ class CartController extends Controller
             $cart->save();
         }
         $json['success'] = true;
-        echo json_encode($json)
-;
+        $ct = new Cart();
+        $json['quantity'] = $ct->CartQuantity();
+        echo json_encode($json);
 
 
 

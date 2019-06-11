@@ -16,59 +16,87 @@ class Cart extends Model
     protected $primaryKey = 'cart_id';
     protected $connection = 'mysql';
 
-    public function detail($cartDetail){
+    public function detail($cartDetail)
+    {
         $cart = array();
         $total = 0;
         foreach (json_decode($cartDetail->cart) as $key => $v) {
-                $product = Product::where('product_id', $v->product_id)->where('status', 1)->first();
-                $productSpecial = ProductSpecial::where('product_id', $v->product_id)->first();
-                if ($productSpecial) {
-                    $price = $productSpecial->price;
-                } else {
-                    $price = $product->price;
-                }
-                /*            foreach ($v->variation as $variation => $value) {
-                                $productVariationValue = ProductVariationValue::where('variation_id', $variation)->where('value_id', $value)->where('product_id', $v->product_id)->first();
-                                print_r($productVariationValue);
-                                exit();
-                                if ($productVariationValue->count()) {
-                                    $productVariationValue = $productVariationValue->first();
-                                    if($productVariationValue->price_prefix == '+') {
-                                        $price = $price + $productVariationValue->price;
-                                    } elseif ($productVariationValue->price_prefix == '-'){
-                                        $price = $price - $productVariationValue->price;
-                                    }
-
+            $product = Product::where('product_id', $v->product_id)->where('status', 1)->first();
+            $productSpecial = ProductSpecial::where('product_id', $v->product_id)->first();
+            if ($productSpecial) {
+                $price = $productSpecial->price;
+            } else {
+                $price = $product->price;
+            }
+            /*            foreach ($v->variation as $variation => $value) {
+                            $productVariationValue = ProductVariationValue::where('variation_id', $variation)->where('value_id', $value)->where('product_id', $v->product_id)->first();
+                            print_r($productVariationValue);
+                            exit();
+                            if ($productVariationValue->count()) {
+                                $productVariationValue = $productVariationValue->first();
+                                if($productVariationValue->price_prefix == '+') {
+                                    $price = $price + $productVariationValue->price;
+                                } elseif ($productVariationValue->price_prefix == '-'){
+                                    $price = $price - $productVariationValue->price;
                                 }
-                            }*/
-                $cart[$key]= array(
-                    'name' => $product->name,
-                    'url' => $product->seo_url,
-                    'id' => $product->product_id,
-                    'quantity' => $v->quantity,
-                    'item_price' => $price,
-                    'item_total' => $price * $v->quantity,
-                    'image' => empty($product->image) ? asset('images.png') : asset('catalog/'.$product->image),
-                    'description' => $product->short_description,
-                    'variation' => $v->variation,
-                );
+
+                            }
+                        }*/
+            $cart[$key] = array(
+                'name' => $product->name,
+                'url' => $product->seo_url,
+                'id' => $product->product_id,
+                'quantity' => $v->quantity,
+                'item_price' => $price,
+                'item_total' => $price * $v->quantity,
+                'image' => empty($product->image) ? asset('images.png') : asset('catalog/' . $product->image),
+                'description' => $product->short_description,
+                'variation' => $v->variation,
+            );
 
             $total = $total + ($price * $v->quantity);
 
 
-          }
+        }
 
 
-
-          $cartDe = Cart::find($cartDetail->cart_id);
-          $cartDe->sub_total =  $total;
-          $cartDe->grant_total =  $cartDe->sub_total  + $cartDe->shipping;
-          $cartDe->save();
-
+        $cartDe = Cart::find($cartDetail->cart_id);
+        $cartDe->sub_total = $total;
+        $cartDe->grant_total = $cartDe->sub_total + $cartDe->shipping;
+        $cartDe->save();
 
 
-          return $cart;
+        return $cart;
 
 
+    }
+
+
+    function CartQuantity()
+    {
+        $cart_id = (isset($_COOKIE['cart_id']) ? $_COOKIE['cart_id'] : 0);
+        if (!$cart_id) {
+            $quantity = 0;
+        } else {
+            $cartDetail = Cart::where('key', $cart_id);
+            if ($cartDetail->count() == 0) {
+                $quantity = 0;
+            } else {
+                $cartDetail = $cartDetail->first();
+                if (empty(json_decode($cartDetail->cart, true))) {
+                    $quantity = 0;
+                } else {
+                    $cart = array();
+                    $ct = new Cart();
+                    $cart = $ct->detail($cartDetail);
+                }
+
+                $quantity = 0;
+                foreach ($cart as $product) {
+                    $quantity = $quantity + $product['quantity'];
+                }
+            }
+        }
+        return $quantity;
     }
 }

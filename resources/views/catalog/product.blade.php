@@ -119,6 +119,7 @@
                         $('html, body').animate({
                             scrollTop: $(".alert-success").offset().top - 200
                         }, 1000);
+                        $('#cart_quantity').html(json['quantity'])
 
 
 
