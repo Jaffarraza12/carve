@@ -22,6 +22,7 @@ class CartController extends Controller
         $cart_id = (isset($_COOKIE['cart_id'])? $_COOKIE['cart_id'] : 0 );
         $country_id = 162;
         $cart_message ='';
+        $cart  = array();
         if($cart_id){
         $cartDetail = Cart::where('key',$cart_id);
 
@@ -31,7 +32,7 @@ class CartController extends Controller
                 if(empty( json_decode($cartDetail->cart, true) )){
                     $cart_message = 'Your Cart is Empty';
                 } else {
-                $cart  = array();
+
                 $ct = new Cart();
                 $cart = $ct->detail($cartDetail);
                 }
