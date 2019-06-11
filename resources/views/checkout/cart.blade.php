@@ -346,6 +346,7 @@
             <div class="alert alert-danger" role="alert">
                 <strong>YOUR CART IS EMPTY  </strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
             </div>
+            <div style="height:450px;"></div>
         @endif
     </div>
 @endsection

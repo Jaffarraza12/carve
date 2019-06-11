@@ -21,6 +21,7 @@ class CartController extends Controller
     function index(Request $request){
         $cart_id = (isset($_COOKIE['cart_id'])? $_COOKIE['cart_id'] : 0 );
         $country_id = 162;
+
         $cart_message ='';
         $cart  = array();
         if($cart_id){

@@ -75,6 +75,7 @@ class Cart extends Model
     function CartQuantity()
     {
         $cart_id = (isset($_COOKIE['cart_id']) ? $_COOKIE['cart_id'] : 0);
+        $cart = array();
         if (!$cart_id) {
             $quantity = 0;
         } else {
@@ -86,14 +87,16 @@ class Cart extends Model
                 if (empty(json_decode($cartDetail->cart, true))) {
                     $quantity = 0;
                 } else {
-                    $cart = array();
+
                     $ct = new Cart();
                     $cart = $ct->detail($cartDetail);
                 }
 
                 $quantity = 0;
-                foreach ($cart as $product) {
-                    $quantity = $quantity + $product['quantity'];
+                if(sizeof($cart) > 0){
+                    foreach ($cart as $product) {
+                        $quantity = $quantity + $product['quantity'];
+                    }
                 }
             }
         }
