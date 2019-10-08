@@ -290,6 +290,11 @@ span.drop_down_icon{
     font-size: 30px;
     font-weight: normal;
 }
+.SearchVector{
+    background:#262626;
+    border-radius: 4px;
+    color:#fff;
+}
 @media only screen and (max-width: 756px) {
     .nav_menu_toggler_icon{
         display:block;

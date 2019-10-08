@@ -61,21 +61,19 @@
             <div class="btn-group pull-right ">
                 <a href="{{URL('/cart')}}"  class="ShoppingCart position-relative cart-link">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" ><span id="cart_quantity" >{{$cart_quantity}}</span></div>
-                </a>{{--<div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                </div>--}}
-
+                </a>
+            </div>
+            <div class="btn-group pull-right ">
+                <a href="{{URL('/cart')}}"  class="SearchVector position-relative cart-link">
+                    <i class="fa fa-search"></i><div class="position-absolute" ></div>
+                </a>
             </div>
             <div class="menu-container clearfix">
                 <nav class="manu clearfix" >
                     <ul class="m-auto d-block">
                         <li><a href="{{URL('/')}}"><i class="fa fa-home"></i></a></li>
                         <li ><a href="#">Our Collection</a>
-                            <ul>
+                            <ul style="display: none" >
                                 <li><a href="#">School</a>
                                     <ul>
                                         <li><a href="#">Lidership</a></li>
@@ -111,7 +109,7 @@
                         </li>
 
                         <li><a href="#">Graphic T-Shirt</a>
-                            <ul>
+                            <ul style="display: none">
                                 <li><a href="#">School</a>
                                     <ul>
                                         <li><a href="#">Lidership</a></li>
@@ -139,8 +137,8 @@
                                 <li><a href="#">Empty sub</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">New Arrivals</a></li>
                         <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Carve Stylist</a></li>
                     </ul>
                 </nav>
             </div>
