@@ -58,7 +58,7 @@
 
         </div>
         <div class="col col-lg-10">
-            <div class="btn-group pull-right hidden-desk">
+            <div class="btn-group pull-right ">
                 <a href="{{URL('/cart')}}"  class="ShoppingCart position-relative cart-link">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" ><span id="cart_quantity" >{{$cart_quantity}}</span></div>
                 </a>{{--<div class="dropdown-menu">
