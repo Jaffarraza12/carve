@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54f95a6d-bb13-4619-a92b-b06f5ee882e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style.css" afterPath="$PROJECT_DIR$/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,8 +53,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="171" column="21" lean-forward="true" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
+            <state relative-caret-position="192">
+              <caret line="163" column="17" lean-forward="false" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -122,7 +121,7 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="git status" />
+      <command text="git push" />
       <command text="git add ." />
       <command text="git commit -m &quot;UI change.&quot;" />
       <command text="git push" />
@@ -456,12 +455,12 @@
       <workItem from="1560161197464" duration="8538000" />
       <workItem from="1560239511547" duration="3512000" />
       <workItem from="1560248801384" duration="257000" />
-      <workItem from="1570529584845" duration="3085000" />
+      <workItem from="1570529584845" duration="3198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269372000" />
+    <option name="totallyTimeSpent" value="269485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
@@ -868,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="171" column="21" lean-forward="true" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
+        <state relative-caret-position="192">
+          <caret line="163" column="17" lean-forward="false" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
           <folding />
         </state>
       </provider>
