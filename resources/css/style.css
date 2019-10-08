@@ -159,12 +159,12 @@ ul,li{
 }
 .menu-container .manu ul li a{
     display: block;
-    padding: 15px 25px;
-
+    padding: 25px 14px;
     transition: .2s;
     font-size: 20px;
     font-weight: 400;
-    color: #000;
+    color: #262626;
+    text-transform: uppercase;
 
 }
 .menu-container .manu ul li a span{
@@ -294,6 +294,9 @@ span.drop_down_icon{
     background:#262626;
     border-radius: 4px;
     color:#fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 14px;
 }
 @media only screen and (max-width: 756px) {
     .nav_menu_toggler_icon{

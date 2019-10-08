@@ -64,7 +64,7 @@
                 </a>
             </div>
             <div class="btn-group pull-right ">
-                <a href="{{URL('/cart')}}"  class="SearchVector position-relative cart-link">
+                <a href="{{URL('/cart')}}"  class="SearchVector position-relative ">
                     <i class="fa fa-search"></i><div class="position-absolute" ></div>
                 </a>
             </div>
