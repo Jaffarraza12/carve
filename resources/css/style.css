@@ -332,6 +332,7 @@ span.drop_down_icon{
     .menu-container .manu ul li .have_dropdown_n_style{
         position: relative;
     }
+    .hidden-phone{display: none;}
 }
 
 
