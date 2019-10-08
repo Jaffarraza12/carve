@@ -47,13 +47,17 @@
                 </div>
             </form>--}}
             <button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
-            <a class="navbar-brand hidden-phone" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
+            <a class="navbar-brand hidden-mbl" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
         </div>
         <div class="col col-lg-8 m-auto ">
+            <a class="navbar-brand hidden-desk" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
+
+        </div>
+        <div class="col col-lg-10">
             <div class="menu-container clearfix">
                 <nav class="manu clearfix" >
                     <ul class="m-auto d-block">
@@ -128,12 +132,9 @@
                     </ul>
                 </nav>
             </div>
-
-        </div>
-        <div class="col col-lg-2">
-            <div class="btn-group pull-right">
+            <div class="btn-group pull-right hidden-desk">
                 <a href="{{URL('/cart')}}"  class="ShoppingCart position-relative cart-link">
-                          <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" s><span id="cart_quantity" >{{$cart_quantity}}</span></div>
+                          <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" ><span id="cart_quantity" >{{$cart_quantity}}</span></div>
                 </a>{{--<div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
