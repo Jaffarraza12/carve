@@ -9,7 +9,7 @@ a{color:#c6a360;}
 .hidden-mbl{display: block;}
 
 .container{max-width: 100% !important}
-.navbar-brand{padding: 15px 0px !important;}
+.navbar-brand{padding: 2px 0px !important;min-height: 60px;}
 a,p,span,div{font-size: 14px;}
 .btn-shop{background:#a70b0b;color: #fff;display: block;text-align: center; }
 .btn-shop:hover{color: #fff}
