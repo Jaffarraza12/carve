@@ -53,7 +53,7 @@
             </button>
 
         </div>
-        <div class="col col-lg-8 m-auto ">
+        <div class="col m-auto hidden-desk ">
             <a class="navbar-brand hidden-desk" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
 
         </div>
