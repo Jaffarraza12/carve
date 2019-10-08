@@ -72,71 +72,8 @@
                 <nav class="manu clearfix" >
                     <ul class="m-auto d-block">
                         <li><a href="{{URL('/')}}"><i class="fa fa-home"></i></a></li>
-                        <li ><a href="#">Our Collection</a>
-                            <ul style="display: none" >
-                                <li><a href="#">School</a>
-                                    <ul>
-                                        <li><a href="#">Lidership</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Locations</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a></li>
-                                        <li><a href="#">Masters</a></li>
-                                        <li><a href="#">International</a></li>
-                                        <li><a href="#">Online</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Research</a>
-                                    <ul>
-                                        <li><a href="#">Undergraduate research</a></li>
-                                        <li><a href="#">Masters research</a></li>
-                                        <li><a href="#">Funding</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Something</a>
-                                    <ul>
-                                        <li><a href="#">Sub something</a></li>
-                                        <li><a href="#">Sub something</a></li>
-                                        <li><a href="#">Sub something</a></li>
-                                        <li><a href="#">Sub something</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li><a href="#">Graphic T-Shirt</a>
-                            <ul style="display: none">
-                                <li><a href="#">School</a>
-                                    <ul>
-                                        <li><a href="#">Lidership</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Locations</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a></li>
-                                        <li><a href="#">Masters</a></li>
-                                        <li><a href="#">International</a></li>
-                                        <li><a href="#">Online</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Study</a>
-                                    <ul>
-                                        <li><a href="#">Undergraduate</a></li>
-                                        <li><a href="#">Masters</a></li>
-                                        <li><a href="#">International</a></li>
-                                        <li><a href="#">Online</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Empty sub</a></li>
-                            </ul>
-                        </li>
+                        <li ><a href="#">Our Collection</a></li>
+                        <li><a href="#">Graphic T-Shirt</a> </li>
                         <li><a href="#">Our Story</a></li>
                         <li><a href="#">Carve Stylist</a></li>
                     </ul>
