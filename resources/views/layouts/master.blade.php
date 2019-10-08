@@ -47,13 +47,88 @@
                 </div>
             </form>--}}
             <button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
-
-        </div>
-        <div class="col col-lg-8 m-auto text-center">
             <a class="navbar-brand" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+        </div>
+        <div class="col col-lg-8 m-auto ">
+            <div class="menu-container clearfix">
+                <nav class="manu clearfix" >
+                    <ul class="m-auto d-block">
+                        <li><a href="{{URL('/')}}"><i class="fa fa-home"></i></a></li>
+                        <li ><a href="#">Our Collection</a>
+                            <ul>
+                                <li><a href="#">School</a>
+                                    <ul>
+                                        <li><a href="#">Lidership</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Study</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Masters</a></li>
+                                        <li><a href="#">International</a></li>
+                                        <li><a href="#">Online</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Research</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate research</a></li>
+                                        <li><a href="#">Masters research</a></li>
+                                        <li><a href="#">Funding</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Something</a>
+                                    <ul>
+                                        <li><a href="#">Sub something</a></li>
+                                        <li><a href="#">Sub something</a></li>
+                                        <li><a href="#">Sub something</a></li>
+                                        <li><a href="#">Sub something</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Graphic T-Shirt</a>
+                            <ul>
+                                <li><a href="#">School</a>
+                                    <ul>
+                                        <li><a href="#">Lidership</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Study</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Masters</a></li>
+                                        <li><a href="#">International</a></li>
+                                        <li><a href="#">Online</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Study</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Masters</a></li>
+                                        <li><a href="#">International</a></li>
+                                        <li><a href="#">Online</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Empty sub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Our Story</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
         <div class="col col-lg-2">
             <div class="btn-group pull-right">
@@ -71,80 +146,7 @@
         </div>
     </div>
 </div>
-<div class="menu-container clearfix">
-   <nav class="manu clearfix" >
-        <ul class="m-auto d-block">
-            <li><a href="{{URL('/')}}"><i class="fa fa-home"></i></a></li>
-            <li ><a href="#">Our Collection</a>
-                <ul>
-                    <li><a href="#">School</a>
-                        <ul>
-                            <li><a href="#">Lidership</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Locations</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                        <ul>
-                            <li><a href="#">Undergraduate</a></li>
-                            <li><a href="#">Masters</a></li>
-                            <li><a href="#">International</a></li>
-                            <li><a href="#">Online</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Research</a>
-                        <ul>
-                            <li><a href="#">Undergraduate research</a></li>
-                            <li><a href="#">Masters research</a></li>
-                            <li><a href="#">Funding</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Something</a>
-                        <ul>
-                            <li><a href="#">Sub something</a></li>
-                            <li><a href="#">Sub something</a></li>
-                            <li><a href="#">Sub something</a></li>
-                            <li><a href="#">Sub something</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
 
-            <li><a href="#">Graphic T-Shirt</a>
-                <ul>
-                    <li><a href="#">School</a>
-                        <ul>
-                            <li><a href="#">Lidership</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Locations</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                        <ul>
-                            <li><a href="#">Undergraduate</a></li>
-                            <li><a href="#">Masters</a></li>
-                            <li><a href="#">International</a></li>
-                            <li><a href="#">Online</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                        <ul>
-                            <li><a href="#">Undergraduate</a></li>
-                            <li><a href="#">Masters</a></li>
-                            <li><a href="#">International</a></li>
-                            <li><a href="#">Online</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Empty sub</a></li>
-                </ul>
-            </li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Our Story</a></li>
-        </ul>
-    </nav>
-</div>
 @yield('banner')
 
 
