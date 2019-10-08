@@ -48,7 +48,7 @@
             </form>--}}
             <button class="nav_menu_toggler_icon"><span class="fa fa-bars"></span></button>
             <a class="navbar-brand hidden-mbl" href="{{URL('/')}}"><img class="m-auto text-center" src="resources/images/carve.png" /> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button style="display: none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
