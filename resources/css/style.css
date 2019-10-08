@@ -138,9 +138,9 @@ ul,li{
 }
 @media (min-width: 1281px) {
     .menu-container {
-        width: 725px;
         margin: auto;
-        text-align: center;
+        text-align: right;
+        float: right;
     }
 
     .menu-container .manu ul li .have_dropdown_n_style{

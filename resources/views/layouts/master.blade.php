@@ -58,6 +58,18 @@
 
         </div>
         <div class="col col-lg-10">
+            <div class="btn-group pull-right hidden-desk">
+                <a href="{{URL('/cart')}}"  class="ShoppingCart position-relative cart-link">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" ><span id="cart_quantity" >{{$cart_quantity}}</span></div>
+                </a>{{--<div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>--}}
+
+            </div>
             <div class="menu-container clearfix">
                 <nav class="manu clearfix" >
                     <ul class="m-auto d-block">
@@ -132,18 +144,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="btn-group pull-right hidden-desk">
-                <a href="{{URL('/cart')}}"  class="ShoppingCart position-relative cart-link">
-                          <i class="fa fa-shopping-bag" aria-hidden="true"></i><div class="position-absolute" ><span id="cart_quantity" >{{$cart_quantity}}</span></div>
-                </a>{{--<div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                </div>--}}
 
-            </div>
         </div>
     </div>
 </div>
