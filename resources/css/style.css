@@ -132,7 +132,7 @@ span.old_price {text-decoration: line-through;color: #4c4c4c;font-size: 26px;mar
     .hidden-desk{display: block;}
 
     .header-top .rightLinks li { margin-left: 2px;padding-left: 10px;}
-    .cart-link i{font-size: 14px !important;}
+    .cart-link i{font-size: 22px !important;}
     .SearchVector{    padding: 2px!important;font-size: 14px!important;margin: 15px 7px !important;}
     .cart-link div { width: 14px !important;height: 16px !important;left: 16px !important; bottom: 40px !important;}
 
@@ -307,7 +307,6 @@ span.drop_down_icon{
         display:block;
     }
     .menu-container{
-        background: #c6a360;
     }
     .menu-container .manu{
         display: none;
