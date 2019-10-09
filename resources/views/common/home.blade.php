@@ -28,18 +28,24 @@
        </div>
    </div>
 
-        <div class="home-container m-auto">
+    <div class="home-container m-auto">
         <div class="row">
-            @foreach($homeCategories as $category)
             <div class="col-lg-6 homeGrid">
                 <div class="categoryImage m-auto text-center">
-                    <a href="{{URL($category->seo_url)}}"> <img class=" " src="{{ asset('catalog'.$category->image)}}"  width="500" height="auto"/></a>
+                    <a href="/uptown"> <img class=" " src="{{ asset('images/Collection-Banner-1.jpg')}}"  width="500" height="auto"/></a>
                 </div>
                 <div class="categoryDetail">
-                    <a href="{{URL($category->seo_url)}}" class="categoryTitle text-center d-block text-uppercase">{{$category->name}}</a>
+                    <a href="/uptown" class="categoryTitle text-center d-block text-uppercase">Uptown</a>
                 </div>
             </div>
-            @endforeach;
+            <div class="col-lg-6 homeGrid">
+                <div class="categoryImage m-auto text-center">
+                    <a href="/eminence"> <img class=" " src="{{ asset('images/Collection-Banner-2.jpg')}}"  width="500" height="auto"/></a>
+                </div>
+                <div class="categoryDetail">
+                    <a href="//eminence" class="categoryTitle text-center d-block text-uppercase">Eminence</a>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

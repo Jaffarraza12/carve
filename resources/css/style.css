@@ -132,6 +132,8 @@ span.old_price {text-decoration: line-through;color: #4c4c4c;font-size: 26px;mar
     .hidden-desk{display: block;}
 
     .header-top .rightLinks li { margin-left: 2px;padding-left: 10px;}
+    .cart-link i{font-size: 14px;}
+    .SearchVector{margin:7px;}
 
 }
 ul,li{
@@ -156,7 +158,6 @@ ul,li{
 .menu-container .manu ul {
     padding: 0px;
     text-align: left;
-    background: #c6a360;
 }
 .menu-container .manu ul li a{
     display: block;
@@ -333,7 +334,6 @@ span.drop_down_icon{
     .menu-container .manu ul li .have_dropdown_n_style li{
         width:100%;
         float: none;
-        background: #c6a360;
     }
     .menu-container .manu ul li .have_dropdown_n_style li a{
         float: none;
